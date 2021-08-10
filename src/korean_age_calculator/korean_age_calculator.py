@@ -1,21 +1,17 @@
 """korean_age_calculator 모듈.
 
-Please put in a description of the module.
+한국 나이의 단위는 ``살``입니다. 한국 사람들은 태어나면 바로 1살이 됩니다.
+이를 기반으로 당신이 태어난 연도를 알려주시면 한국 사람들이 갖고 있는 한국식 나이를 알려드립니다.
+
+The unit of Korean age is 'sal'. Koreans turn 1 year old right after they are born.
+Based on this, if you tell me the year you were born, I will tell you the Korean age that Koreans have.
 
 Example:
     ``korean_age_calculator`` 사용법은 아래와 같습니다.
 
-        $ pip install ./
-        $ korean_age_calculator-ping
-
-추가적인 설명은 여기에!
-
-Attributes:
-    nnn (int): ``사용되지 않는`` 시범용 변수
-
-Todo:
-    * 무한한 모듈의 발전 ``꿈``꾸며!
-    * ``Dreaming`` of infinite module development!
+        $ pip install korean-age-calculator
+        $ korean-age-calculator 1988
+        >>> Born in 1988, you are 34 살(years old) in Korean style.
 
 """
 import sys
@@ -23,14 +19,14 @@ import datetime
 
 
 def how_korean_age(year_of_birth: int, current_year=datetime.datetime.now().year) -> int:
-    """한국 나이 계산
+    """태어는 연도를 입력하면 한국 나이를 계산하여 알려드립니다.
 
     Args:
-        year_of_birth: 태어난 해
-        current_year: 기준년도(옵션)
+        year_of_birth: 태어난 연도
+        current_year: 기준년도 - 입력하지 않으면 현 연도(datetime.datetime.now().year)
 
     Returns:
-        한국식 나이를 알려드립니다.
+        한국 나이
     """
     korean_age = current_year - year_of_birth + 1
     return korean_age
