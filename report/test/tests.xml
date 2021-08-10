@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="m.local" name="pytest" skipped="0" tests="1" time="0.110" timestamp="2021-08-10T12:20:07.137427"><testcase classname="korean_age_calculator.test_korean_age_calculator" name="test_how_korean_age" time="0.002" /></testsuite></testsuites>

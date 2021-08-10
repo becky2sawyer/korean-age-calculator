@@ -1,8 +1,6 @@
-import sys
-import korean_age_calculator
+import korean_age_calculator as kac
 
 
-def test_ping():
-    sys.argv = ['foo', '10']
-    korean_age_calculator.ping()
-
+def test_how_korean_age():
+    korean_age = kac.how_korean_age(year_of_birth=1999, current_year=2021)
+    assert korean_age == 23

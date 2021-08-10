@@ -4,8 +4,7 @@ repo_url: https://github.com/becky2sawyer/korean-age-calculator
 repo_name: becky2sawyer/korean-age-calculator
 
 theme:
-  logo: img/eye.png
-  favicon: img/favicon-16x16.png
+  logo: img/mom.png
   name: "material"
   language: kr
   features:
